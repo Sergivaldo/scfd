@@ -1,4 +1,4 @@
-package junior.sergivaldo;
+package junior.sergivaldo.scfd;
 
 public class Main {
     public static void main(String[] args) {
