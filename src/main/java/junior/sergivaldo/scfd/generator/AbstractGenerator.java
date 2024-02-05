@@ -29,7 +29,7 @@ public abstract class AbstractGenerator {
     public String generateGetter(String nameProp, String typeProp) {
         var methodTemplate =
                 """
-                public ${methodName} get${nameProp}() {
+                public ${typeProp} get${methodName}() {
                     return ${nameProp};
                 }
                 """;
