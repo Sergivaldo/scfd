@@ -8,9 +8,9 @@ import java.util.Map;
 
 public abstract class AbstractGenerator {
 
-    private static Map<String, String> parameters = new HashMap<>();
+    private final static Map<String, String> parameters = new HashMap<>();
 
-    public static String generateSetter(String nameProp, String typeProp) {
+    public String generateSetter(String nameProp, String typeProp) {
         var methodTemplate =
                 """
                 public void set${methodName}(${typeProp} ${nameProp}) {
@@ -26,7 +26,7 @@ public abstract class AbstractGenerator {
         return new StringSubstitutor(parameters).replace(methodTemplate);
     }
 
-    public static String generateGetter(String nameProp, String typeProp) {
+    public String generateGetter(String nameProp, String typeProp) {
         var methodTemplate =
                 """
                 public ${methodName} get${nameProp}() {
