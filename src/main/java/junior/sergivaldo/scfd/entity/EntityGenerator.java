@@ -9,7 +9,7 @@ public class EntityGenerator extends AbstractGenerator {
     }
     
     private String generateImports(){
-
+        return null;
     }
 
 }
