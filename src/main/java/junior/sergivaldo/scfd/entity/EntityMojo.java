@@ -1,4 +1,4 @@
-package junior.sergivaldo.scfd.entity.mojo;
+package junior.sergivaldo.scfd.entity;
 
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
